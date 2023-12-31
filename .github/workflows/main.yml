@@ -24,8 +24,8 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          server: ${{ secrets.FTP_SERVER}}
-          username: ${{ secrets.FTP_NAME}}
-          password: ${{ secrets.FTP_PASSWORD}}
+          server: ftp.mariful-islam.com
+          username: reactproject@project.mariful-islam.com
+          password: 3TPb!vEk,gxc
           dangerous-clean-slate: true
           local-dir: ./dist/
