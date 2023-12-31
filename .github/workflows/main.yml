@@ -29,3 +29,5 @@ jobs:
           password: 3TPb!vEk,gxc
           dangerous-clean-slate: true
           local-dir: ./dist/
+          ftp-port: 21
+          ftp-passive: true
