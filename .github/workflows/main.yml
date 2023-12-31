@@ -22,13 +22,14 @@ jobs:
           npm run build
          
       - name: 📂 Sync files
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        uses: SamKirkland/FTP-Deploy-Action@v4.6.6
         with:
          server: ftp.mariful-islam.com
          username: reactproject@project.mariful-islam.com
          password: "3TPb!vEk,gxc"
          dangerous-clean-slate: true
          local-dir: ./dist/
-         timeout: 300000  
+         timeout: 600000  
          debug: true
          ftp-passive: false
+         dry-run: true
